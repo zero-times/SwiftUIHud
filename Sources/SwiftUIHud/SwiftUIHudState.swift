@@ -19,6 +19,8 @@ public class SwiftUIHudState: ObservableObject {
     private(set) public var systemImage: String? = ""
     private(set) public var type: SwiftUIHudType = .progress()
     
+    public init() {}
+    
     public var alignment: Alignment {
         switch type {
         case .progress: return .center
