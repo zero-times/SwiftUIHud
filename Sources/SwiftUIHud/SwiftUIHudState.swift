@@ -12,7 +12,7 @@ public enum SwiftUIHudType: Equatable {
     case progress(title: String? = nil, duration: TimeInterval = 3)
 }
 
-final public class SwiftUIHudState: ObservableObject {
+public class SwiftUIHudState: ObservableObject {
     
     @Published public var isPresented: Bool = false
     private(set) public var title: String? = ""
